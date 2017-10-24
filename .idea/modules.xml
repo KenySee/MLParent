@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MLParent.iml" filepath="$PROJECT_DIR$/MLParent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/apollo/apollo.iml" filepath="$PROJECT_DIR$/.idea/modules/apollo/apollo.iml" group="apollo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/config/config.iml" filepath="$PROJECT_DIR$/.idea/modules/config/config.iml" group="config" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/config/config_main.iml" filepath="$PROJECT_DIR$/.idea/modules/config/config_main.iml" group="config" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/config/config_test.iml" filepath="$PROJECT_DIR$/.idea/modules/config/config_test.iml" group="config" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eureka/eureka.iml" filepath="$PROJECT_DIR$/.idea/modules/eureka/eureka.iml" group="eureka" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eureka/eureka_main.iml" filepath="$PROJECT_DIR$/.idea/modules/eureka/eureka_main.iml" group="eureka" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eureka/eureka_test.iml" filepath="$PROJECT_DIR$/.idea/modules/eureka/eureka_test.iml" group="eureka" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/hyapp/hyapp.iml" filepath="$PROJECT_DIR$/.idea/modules/hyapp/hyapp.iml" group="hyapp" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/hyapp/hyapp_main.iml" filepath="$PROJECT_DIR$/.idea/modules/hyapp/hyapp_main.iml" group="hyapp" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/hyapp/hyapp_test.iml" filepath="$PROJECT_DIR$/.idea/modules/hyapp/hyapp_test.iml" group="hyapp" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/spark/spark.iml" filepath="$PROJECT_DIR$/.idea/modules/spark/spark.iml" group="spark" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/zuul/zuul.iml" filepath="$PROJECT_DIR$/.idea/modules/zuul/zuul.iml" group="zuul" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/zuul/zuul_main.iml" filepath="$PROJECT_DIR$/.idea/modules/zuul/zuul_main.iml" group="zuul" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/zuul/zuul_test.iml" filepath="$PROJECT_DIR$/.idea/modules/zuul/zuul_test.iml" group="zuul" />
+    </modules>
+  </component>
+</project>

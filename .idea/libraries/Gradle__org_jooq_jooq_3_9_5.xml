@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: org.jooq:jooq:3.9.5">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/jooq/jooq/3.9.5/jooq-3.9.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

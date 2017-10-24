@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.fasterxml.jackson.module:jackson-module-scala_2.11:2.8.9">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-scala_2.11/2.8.9/c80993126629ed4e295dbd36d7fa69e4a33a95c9/jackson-module-scala_2.11-2.8.9.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-scala_2.11/2.8.9/fe7eff634a42b37f3ff10652919ad5f11264269d/jackson-module-scala_2.11-2.8.9-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

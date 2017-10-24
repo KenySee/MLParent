@@ -1,0 +1,49 @@
+group 'com.zallhy.parent'
+version = '0.0.1'
+subprojects {
+	ext {
+		springBootVersion = '1.5.6.RELEASE'
+		springCloudVersion = 'Dalston.SR3' //'Camden.SR7'
+		mybatisSpringBootVersion='1.2.0'
+		mybatisVersion = '3.2.8'
+		mysqlVersion = '5.1.38'
+		okhttpVersion = '3.4.1'
+		druidVersion = '1.0.27'
+		jooqVersion = '3.9.5'
+		jooqPluginVersion = '2.0.7'
+		sparkVersion = '2.2.0'
+		scalaVersion = '2.11'
+		commonsLang3Version = '3.4'
+		snappyVersion = '1.1.2.1'
+		log4jAPIVersion = '2.5'
+		nekoHtmlVersion = '1.9.22'
+		httpclientVersion = '4.5.2'
+		feignHttpclientVersion ='8.17.0'
+		swagger2Version = '2.2.2'
+		springIntegrationKafkaVersion = '2.0.1.RELEASE'
+		springKafkaCoreVersion ='4.3.6.RELEASE'
+		springKafkaVersion = '1.1.0.RELEASE'
+		fastjsonVersion = '1.2.16'
+		springDataHadoopVersion='2.4.0.RELEASE' //2.1.2.RELEASE
+		hbaseClientVersion ='1.2.4'
+		hadoopVersion = '2.7.3'
+	}
+	buildscript {
+		repositories {
+			maven { url "http://maven.aliyun.com/nexus/content/repositories/snapshots"}
+			maven { url 'https://plugins.gradle.org/m2/' }
+			mavenCentral()
+		}
+		dependencies {
+			classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+			classpath("nu.studer:gradle-jooq-plugin:${jooqPluginVersion}")
+		}
+	}
+	repositories {
+		mavenLocal()
+		maven { url "http://maven.aliyun.com/nexus/content/repositories/snapshots" }
+		mavenCentral()
+	}
+}
+
+

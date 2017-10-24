@@ -1,0 +1,89 @@
+group 'com.zallhy'
+version '1.0.0'
+apply plugin: 'java'
+apply plugin: 'scala'
+apply plugin: 'spring-boot'
+apply plugin: 'nu.studer.jooq'
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+//gradle generateSampleJooqSchemaSource
+jooq {
+    version = '3.9.5'
+    edition = 'OSS'
+    sample(sourceSets.main) {
+        jdbc {
+            driver = 'com.mysql.jdbc.Driver'
+            url = 'jdbc:mysql://192.168.1.12:3306'
+            user = 'root'
+            password = '654321'
+        }
+        generator {
+            name = 'org.jooq.util.DefaultGenerator'
+            strategy {
+//                name = 'com.zallhy.jooq.SampleGeneratorStrategy'  // use the custom generator strategy
+            }
+            database {
+                name = 'org.jooq.util.mysql.MySQLDatabase'
+                inputSchema = 'ejavashop'
+            }
+            target {
+                packageName = 'com.zallhy.hyapp'
+            }
+        }
+    }
+}
+dependencyManagement {
+    imports {
+        mavenBom "org.springframework.cloud:spring-cloud-dependencies:"+ springCloudVersion
+        mavenBom "org.springframework.boot:spring-boot-dependencies:"+ springBootVersion
+        mavenBom "org.springframework.boot:spring-boot-starter:"+ springBootVersion
+    }
+}
+dependencies {
+    compile ('commons-io:commons-io:2.5')
+    compile ('org.apache.commons:commons-lang3:3.5')
+    compile ('org.jooq:jooq:'+jooqVersion)
+    compile ('org.jooq:jooq-codegen:'+jooqVersion)
+    compile ('mysql:mysql-connector-java:'+mysqlVersion)
+    jooqRuntime ('mysql:mysql-connector-java:'+mysqlVersion)
+    compile ('org.scala-lang:scala-compiler:'+scalaVersion+'.8')
+    compile ('org.apache.spark:spark-core_'+scalaVersion+':'+sparkVersion)
+    compile ('org.apache.spark:spark-streaming_'+scalaVersion+':'+sparkVersion)
+    compile ('org.apache.spark:spark-sql_'+scalaVersion+':'+sparkVersion)
+    compile ('org.apache.spark:spark-graphx_'+scalaVersion+':'+sparkVersion)
+    compile ('org.apache.spark:spark-mllib_'+scalaVersion+':'+sparkVersion)
+    compile ('com.googlecode.netlib-java:netlib-java:1.1')
+    compile ('org.jblas:jblas:1.2.4')
+    compile ('org.codehaus.janino:commons-compiler:2.7.8')
+    compile ('org.springframework.cloud:spring-cloud-dependencies:'+ springCloudVersion)
+    compile ('org.springframework.cloud:spring-cloud-starter-feign')
+    compile ('org.springframework.cloud:spring-cloud-starter-eureka')
+    compile ('org.springframework.cloud:spring-cloud-starter-config')
+    compile ('org.springframework.cloud:spring-cloud-starter-bus-amqp')
+    compile ('org.springframework.boot:spring-boot-starter-actuator')
+    compile ('org.springframework.boot:spring-boot-starter-web')
+    compile ('org.springframework.boot:spring-boot-starter-aop')
+    compile ('org.springframework.boot:spring-boot-starter-jooq')
+    compile ('org.springframework.retry:spring-retry')
+    compile ('org.aspectj:aspectjweaver:1.8.10')
+    compile ('org.springframework.boot:spring-boot-starter-log4j2')
+    compile ('com.alibaba:fastjson:'+fastjsonVersion)
+    compile ('com.alibaba:druid:'+druidVersion)
+    compile ('mysql:mysql-connector-java:'+mysqlVersion)
+    compile ('it.nerdammer.bigdata:spark-hbase-connector_2.10:1.0.3')
+    compile ('com.google.guava:guava:12.0.1')
+    compile ('com.qiniu:qiniu-java-sdk:7.2.2')
+    compile ('org.ansj:ansj_seg:5.1.1')
+}
+configurations {
+    all*.exclude module: 'spring-boot-starter-logging'
+    all*.exclude module: 'servlet-api'
+    all*.exclude group: 'com.google.guava', module: 'guava:18.0'
+    all*.exclude module: 'logback-classic'
+    all*.exclude module: 'log4j-over-slf4j'
+    all*.exclude module: 'slf4j-log4j12'
+    all*.exclude module: 'snappy-java'
+}
+jar {
+    baseName = 'zall-hyapp-service'
+}

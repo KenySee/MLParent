@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: org.mortbay.jetty:jsp-api-2.1:6.1.14">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/mortbay/jetty/jsp-api-2.1/6.1.14/jsp-api-2.1-6.1.14.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

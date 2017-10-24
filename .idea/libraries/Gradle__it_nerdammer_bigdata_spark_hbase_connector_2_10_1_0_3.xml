@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: it.nerdammer.bigdata:spark-hbase-connector_2.10:1.0.3">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/it.nerdammer.bigdata/spark-hbase-connector_2.10/1.0.3/a2fd5fbcb9436ebe5be57b2d5d3e986bd6f7d365/spark-hbase-connector_2.10-1.0.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/it.nerdammer.bigdata/spark-hbase-connector_2.10/1.0.3/8fd48b417caa8296c36724d73cf383b6f134a07d/spark-hbase-connector_2.10-1.0.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

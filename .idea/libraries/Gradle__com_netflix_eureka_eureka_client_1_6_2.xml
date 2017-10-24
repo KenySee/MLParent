@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: com.netflix.eureka:eureka-client:1.6.2">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/netflix/eureka/eureka-client/1.6.2/eureka-client-1.6.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

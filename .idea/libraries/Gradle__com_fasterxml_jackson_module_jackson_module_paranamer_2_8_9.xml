@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.fasterxml.jackson.module:jackson-module-paranamer:2.8.9">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-paranamer/2.8.9/971a430afadb5a3cac8f8553724eb84aa98b64ab/jackson-module-paranamer-2.8.9.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-paranamer/2.8.9/4b2c7ff490c27762f120a69a5e6b04fc3bf22406/jackson-module-paranamer-2.8.9-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

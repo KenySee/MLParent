@@ -1,0 +1,24 @@
+group 'com.zallhy'
+version '1.0.0'
+apply plugin: 'java'
+apply plugin: 'scala'
+apply plugin: 'spring-boot'
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencyManagement {
+    imports {
+        mavenBom "org.springframework.cloud:spring-cloud-dependencies:"+ springCloudVersion
+        mavenBom "org.springframework.boot:spring-boot-dependencies:"+ springBootVersion
+        mavenBom "org.springframework.boot:spring-boot-starter:"+ springBootVersion
+    }
+}
+dependencies {
+    compile ('org.springframework.cloud:spring-cloud-dependencies:'+ springCloudVersion)
+    compile ('org.springframework.cloud:spring-cloud-starter-zuul')
+    compile ('org.springframework.cloud:spring-cloud-starter-eureka')
+    compile ('org.scala-lang:scala-compiler:'+scalaVersion+'.8')
+}
+jar {
+    baseName = 'zall-zull-service'
+}

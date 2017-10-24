@@ -1,0 +1,7 @@
+include 'eureka'
+include 'config'
+include 'zuul'
+include 'hyapp'
+include 'spark'
+include 'apollo'
+
